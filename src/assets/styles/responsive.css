@@ -1,0 +1,86 @@
+/* Mobile First (par défaut) */
+:root {
+    --primary-green: #4a5d23;
+    --light-green: #c5de93;
+    --dark-text: #2c321f;
+  }
+  
+  /* Petits mobiles (<= 400px) */
+  @media (max-width: 400px) {
+    .header-container, .footer-container {
+      padding: 0.5rem;
+    }
+    .company-slogan {
+      display: none;
+    }
+  }
+  
+  /* Mobiles (401px - 767px) */
+  @media (min-width: 401px) and (max-width: 767px) {
+    .nav-menu {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  /* Tablettes (768px - 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header-container {
+      flex-direction: row;
+      padding: 1rem 2rem;
+    }
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Ordinateurs (1024px - 1439px) */
+  @media (min-width: 1024px) {
+    .header-container, .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Grands écrans (>= 1440px) */
+  @media (min-width: 1440px) {
+    .header-container, .footer-container {
+      max-width: 1400px;
+    }
+  }
+  
+  /* Règles globales */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
